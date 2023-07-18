@@ -36,9 +36,9 @@ const App = () => {
     return <div>Loading...</div>;
   }
 
-  if (status === 'failed') {
-    return <div>Error occurred while loading contacts.</div>;
-  }
+  // if (status === 'failed') {
+  //   return <div>Error occurred while loading contacts.</div>;
+  // }
 
   return (
     <div>
