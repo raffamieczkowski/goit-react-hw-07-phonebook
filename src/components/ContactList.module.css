@@ -1,0 +1,29 @@
+.listContainer {
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contactItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .contactName {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .deleteButton {
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  

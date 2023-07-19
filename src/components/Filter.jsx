@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setFilter } from '../components/store/contactsSlice';
+import { setFilter } from './store/contactsSlice';
+import styles from './Filter.module.css';
 
 const Filter = () => {
   const filter = useSelector((state) => state.contacts.filter);
@@ -11,12 +12,15 @@ const Filter = () => {
   };
 
   return (
-    <input
-      type="text"
-      placeholder="Search..."
-      value={filter}
-      onChange={handleFilterChange}
-    />
+    <div className={styles.searchContainer}>
+      <input
+        className={styles.searchInput}
+        type="text"
+        placeholder="Search..."
+        value={filter}
+        onChange={handleFilterChange}
+      />
+    </div>
   );
 };
 
